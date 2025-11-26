@@ -1,0 +1,5 @@
+
+뒤집기
+문자열에 슬라이싱으로 [::-1]
+
+https://laurent.tistory.com/entry/%ED%8C%8C%EC%9D%B4%EC%8D%AC-%EB%AC%B8%EC%9E%90%EC%97%B4-%EB%AC%B8%EC%A0%9C-%EC%9C%A0%ED%98%95

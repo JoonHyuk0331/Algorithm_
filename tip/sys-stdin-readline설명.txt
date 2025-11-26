@@ -1,0 +1,20 @@
+속도
+input() < sys.stdin.readline()
+
+느린 이유?
+개행문자(\n)를 제거하는 과정을 거친다
+프롬프트 메시지를 출력한다
+
+s=sys.stdin.readline().rstrip('\n') 사용하는 이유?
+s=sys.stdin.readline().strip()
+입력받는 테스트 케이스에 개행문자가 포함된 경우, 예시로
+hello
+hello
+hello
+면
+s=hello'\n' 이 되므로
+print(s)시 줄바꿈이 두번이나 일어나는 문제가 생김
+
+사용처
+테스트케이스가 굉장히 많아 input을 아주 어려번 사용하는 경우 시간초과를 해소해줌
+

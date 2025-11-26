@@ -1,0 +1,43 @@
+# 그래프의 모든 인접 요소 탐색(bfs,dfs)
+
+범위를 넘었다면,
+방문할수 있는 곳이라면,
+이미 방문했다면,
+
+방문시 기록을 남긴다
+
+# 공터 만들기
+graph=[[0]*m for _ in range(n)] #nxm행렬 세로n,가로m에 대응
+
+# 행렬입력받기1
+7
+0110100
+0110101
+1110101
+0000111
+0100000
+0111110
+0111000
+
+graph=[[0]*n for _ in range(n)]
+for i in range(n):
+    li=input()
+    for j in range(n):
+        board[i][j]=int(li[j])
+이렇게 하지 말고
+
+graph=[]
+for i in range(n):
+    board.append(list(map(int,input()))
+이러면 좋다
+
+1. dfs 풀이 시 파이썬은 재귀 깊이 제한이 1000으로 설정되어 있어 문제를 재귀로 풀 경우
+sys.setrecursionlimit(1000000) 로 재귀 제한 풀어야한다
+
+2.파이썬은 queue 대신 deque로 돌려쓴다
+deque를 queue 처럼 쓰려면 push: append pop: popleft
+
+append  ________deque________ appendleft
+pop     --------------------- popleft
+
+3.
