@@ -19,6 +19,6 @@ def solution(numbers):
     #iterable의 요소들을 하나의 문자열로 합쳐줍
     answer=''.join(num_list)
 
-    return answer
+    return str(int(answer))
 
-print(solution([3, 30, 34, 5, 9]))
+print(solution([0,0,0,0]))

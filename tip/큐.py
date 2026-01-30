@@ -5,6 +5,7 @@ q=deque()
 q.append(1)
 q.append(2)
 q.append(3)
+q.pop()
 
 print(q)
 print(q[0]) #rear
@@ -16,7 +17,7 @@ Queue
 rear              front
 0                    -1
 =======================
-popleft          append 
+popleft          append
 
 
 """
